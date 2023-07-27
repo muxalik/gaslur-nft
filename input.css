@@ -15,11 +15,11 @@ figcaption {
 }
 
 .container {
-    @apply max-w-[1440px] w-full px-[80px] mx-auto;
+    @apply max-w-[1440px] w-full px-[15px] sm:px-[30px] md:px-[40px] mx-auto;
 }
 
 .title {
-    @apply text-primary text-[48px] font-medium leading-[72px] tracking-[-1px];
+    @apply text-primary text-[30px] sm:text-[48px] font-medium leading-[72px] tracking-[-1px] whitespace-nowrap;
 }
 
 .text-gradient {

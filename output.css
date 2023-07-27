@@ -600,12 +600,12 @@ video {
   top: -40px;
 }
 
-.z-20 {
-  z-index: 20;
-}
-
 .z-0 {
   z-index: 0;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .m-\[1px\] {
@@ -631,6 +631,10 @@ video {
 
 .mb-\[26px\] {
   margin-bottom: 26px;
+}
+
+.mb-\[37px\] {
+  margin-bottom: 37px;
 }
 
 .mb-\[40px\] {
@@ -669,10 +673,6 @@ video {
   margin-top: 3px;
 }
 
-.mb-\[37px\] {
-  margin-bottom: 37px;
-}
-
 .mt-\[40px\] {
   margin-top: 40px;
 }
@@ -693,6 +693,10 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
@@ -711,6 +715,10 @@ video {
 
 .h-\[24px\] {
   height: 24px;
+}
+
+.h-\[50px\] {
+  height: 50px;
 }
 
 .h-\[53px\] {
@@ -742,6 +750,10 @@ video {
   width: 24px;
 }
 
+.w-\[50px\] {
+  width: 50px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -753,10 +765,6 @@ video {
 
 .max-w-\[175px\] {
   max-width: 175px;
-}
-
-.max-w-\[33\%\] {
-  max-width: 33%;
 }
 
 .max-w-\[455px\] {
@@ -771,12 +779,12 @@ video {
   flex: 1 1 0%;
 }
 
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .cursor-pointer {
   cursor: pointer;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-cols-4 {
@@ -793,6 +801,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -815,8 +827,12 @@ video {
   justify-content: space-evenly;
 }
 
-.gap-\[140px\] {
-  gap: 140px;
+.gap-\[20px\] {
+  gap: 20px;
+}
+
+.gap-\[24px\] {
+  gap: 24px;
 }
 
 .gap-\[29px\] {
@@ -835,12 +851,16 @@ video {
   gap: 50px;
 }
 
+.gap-\[80px\] {
+  gap: 80px;
+}
+
 .gap-\[8px\] {
   gap: 8px;
 }
 
-.gap-\[24px\] {
-  gap: 24px;
+.gap-\[30px\] {
+  gap: 30px;
 }
 
 .gap-x-\[29px\] {
@@ -993,6 +1013,10 @@ video {
   font-size: 12px;
 }
 
+.text-\[14px\] {
+  font-size: 14px;
+}
+
 .text-\[16px\] {
   font-size: 16px;
 }
@@ -1001,16 +1025,16 @@ video {
   font-size: 24px;
 }
 
+.text-\[28px\] {
+  font-size: 28px;
+}
+
 .text-\[32px\] {
   font-size: 32px;
 }
 
 .text-\[40px\] {
   font-size: 40px;
-}
-
-.text-\[72px\] {
-  font-size: 72px;
 }
 
 .font-bold {
@@ -1045,8 +1069,8 @@ video {
   line-height: 36px;
 }
 
-.leading-\[82px\] {
-  line-height: 82px;
+.leading-\[52px\] {
+  line-height: 52px;
 }
 
 .tracking-\[-1px\] {
@@ -1124,10 +1148,6 @@ video {
   transition-duration: 150ms;
 }
 
-.duration-500 {
-  transition-duration: 500ms;
-}
-
 h1,
 h2,
 h3,
@@ -1145,17 +1165,38 @@ figcaption {
   margin-right: auto;
   width: 100%;
   max-width: 1440px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .title {
-  font-size: 48px;
+  white-space: nowrap;
+  font-size: 30px;
   font-weight: 500;
   line-height: 72px;
   letter-spacing: -1px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 48px;
+  }
 }
 
 .text-gradient {
@@ -1311,6 +1352,11 @@ figcaption {
   left: 0px;
 }
 
+.after\:left-1\/2::after {
+  content: var(--tw-content);
+  left: 50%;
+}
+
 .after\:right-0::after {
   content: var(--tw-content);
   right: 0px;
@@ -1326,39 +1372,9 @@ figcaption {
   top: 50%;
 }
 
-.after\:top-0::after {
-  content: var(--tw-content);
-  top: 0px;
-}
-
-.after\:left-1\/2::after {
-  content: var(--tw-content);
-  left: 50%;
-}
-
-.after\:right-\[1px\]::after {
-  content: var(--tw-content);
-  right: 1px;
-}
-
-.after\:right-\[-1px\]::after {
-  content: var(--tw-content);
-  right: -1px;
-}
-
-.after\:right-\[-5px\]::after {
-  content: var(--tw-content);
-  right: -5px;
-}
-
 .after\:z-0::after {
   content: var(--tw-content);
   z-index: 0;
-}
-
-.after\:z-10::after {
-  content: var(--tw-content);
-  z-index: 10;
 }
 
 .after\:mt-\[-3px\]::after {
@@ -1391,15 +1407,15 @@ figcaption {
   width: 100%;
 }
 
-.after\:-translate-y-1\/2::after {
-  content: var(--tw-content);
-  --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .after\:-translate-x-1\/2::after {
   content: var(--tw-content);
   --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.after\:-translate-y-1\/2::after {
+  content: var(--tw-content);
+  --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1463,21 +1479,6 @@ figcaption {
   letter-spacing: -1.5px;
 }
 
-.after\:tracking-\[1px\]::after {
-  content: var(--tw-content);
-  letter-spacing: 1px;
-}
-
-.after\:tracking-\[0\.6px\]::after {
-  content: var(--tw-content);
-  letter-spacing: 0.6px;
-}
-
-.after\:tracking-\[0\.5px\]::after {
-  content: var(--tw-content);
-  letter-spacing: 0.5px;
-}
-
 .after\:text-transparent::after {
   content: var(--tw-content);
   color: transparent;
@@ -1506,9 +1507,9 @@ figcaption {
   transition-duration: 150ms;
 }
 
-.after\:duration-500::after {
+.after\:content-\[\'About_us\'\]::after {
+  --tw-content: 'About us';
   content: var(--tw-content);
-  transition-duration: 500ms;
 }
 
 .after\:content-\[\'Activity\'\]::after {
@@ -1541,8 +1542,23 @@ figcaption {
   content: var(--tw-content);
 }
 
+.after\:content-\[\'Discover\'\]::after {
+  --tw-content: 'Discover';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'Email\'\]::after {
+  --tw-content: 'Email';
+  content: var(--tw-content);
+}
+
 .after\:content-\[\'Explore\'\]::after {
   --tw-content: 'Explore';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'Facebook\'\]::after {
+  --tw-content: 'Facebook';
   content: var(--tw-content);
 }
 
@@ -1551,8 +1567,23 @@ figcaption {
   content: var(--tw-content);
 }
 
+.after\:content-\[\'Home\'\]::after {
+  --tw-content: 'Home';
+  content: var(--tw-content);
+}
+
 .after\:content-\[\'How_it_works\'\]::after {
   --tw-content: 'How it works';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'Instagram\'\]::after {
+  --tw-content: 'Instagram';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'Learn_more\'\]::after {
+  --tw-content: 'Learn more';
   content: var(--tw-content);
 }
 
@@ -1571,56 +1602,6 @@ figcaption {
   content: var(--tw-content);
 }
 
-.after\:content-\[\'Sign_in\'\]::after {
-  --tw-content: 'Sign in';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'View_all\'\]::after {
-  --tw-content: 'View all';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'Home\'\]::after {
-  --tw-content: 'Home';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'Discover\'\]::after {
-  --tw-content: 'Discover';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'Lean_more\'\]::after {
-  --tw-content: 'Lean more';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'Learn_more\'\]::after {
-  --tw-content: 'Learn more';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'About\'\]::after {
-  --tw-content: 'About';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'Email\'\]::after {
-  --tw-content: 'Email';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'Facebook\'\]::after {
-  --tw-content: 'Facebook';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'Instagram\'\]::after {
-  --tw-content: 'Instagram';
-  content: var(--tw-content);
-}
-
 .after\:content-\[\'Portfolio\'\]::after {
   --tw-content: 'Portfolio';
   content: var(--tw-content);
@@ -1631,13 +1612,18 @@ figcaption {
   content: var(--tw-content);
 }
 
+.after\:content-\[\'Sign_in\'\]::after {
+  --tw-content: 'Sign in';
+  content: var(--tw-content);
+}
+
 .after\:content-\[\'Twitter\'\]::after {
   --tw-content: 'Twitter';
   content: var(--tw-content);
 }
 
-.after\:content-\[\'About_us\'\]::after {
-  --tw-content: 'About us';
+.after\:content-\[\'View_all\'\]::after {
+  --tw-content: 'View all';
   content: var(--tw-content);
 }
 
@@ -1646,11 +1632,6 @@ figcaption {
 }
 
 .hover\:after\:opacity-100:hover::after {
-  content: var(--tw-content);
-  opacity: 1;
-}
-
-.after\:hover\:opacity-100:hover::after {
   content: var(--tw-content);
   opacity: 1;
 }
@@ -1686,4 +1667,122 @@ figcaption {
 .peer:hover ~ .peer-hover\:text-blue {
   --tw-text-opacity: 1;
   color: rgb(48 129 237 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .sm\:gap-\[40px\] {
+    gap: 40px;
+  }
+
+  .sm\:text-left {
+    text-align: left;
+  }
+
+  .sm\:text-\[17px\] {
+    font-size: 17px;
+  }
+
+  .sm\:text-\[16px\] {
+    font-size: 16px;
+  }
+
+  .sm\:text-\[18px\] {
+    font-size: 18px;
+  }
+
+  .sm\:text-\[20px\] {
+    font-size: 20px;
+  }
+
+  .sm\:leading-\[62px\] {
+    line-height: 62px;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:gap-0 {
+    gap: 0px;
+  }
+
+  .md\:text-left {
+    text-align: left;
+  }
+
+  .md\:text-center {
+    text-align: center;
+  }
+
+  .md\:text-\[24px\] {
+    font-size: 24px;
+  }
+
+  .md\:text-\[48px\] {
+    font-size: 48px;
+  }
+
+  .md\:text-\[18px\] {
+    font-size: 18px;
+  }
+
+  .md\:leading-\[82px\] {
+    line-height: 82px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:max-w-\[33\%\] {
+    max-width: 33%;
+  }
+
+  .lg\:max-w-\[455px\] {
+    max-width: 455px;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:gap-\[140px\] {
+    gap: 140px;
+  }
+
+  .lg\:text-left {
+    text-align: left;
+  }
+
+  .lg\:text-\[72px\] {
+    font-size: 72px;
+  }
 }
