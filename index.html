@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaslur NFT</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-main min-h-screen w-full text-primary text-[16px]">
+    <header class="w-full absolute top-0 left-0 right-0 z-20 h-[100px]">
+        <nav class="container flex flex-row justify-between items-center h-full">
+            <h2 class="text-gradient bg-clip-text text-[32px] font-bold leading-[22px] tracking-[1.5px] uppercase py-2">
+                Gaslur</h2>
+            <ul class="flex gap-[32px] flex-row justify-center">
+                <li>
+                    <a href="#"
+                        class="text-[12px] font-semibold leading-[22px] tracking-[1.5px] uppercase relative after:w-full after:absolute after:-bottom-[5px] after:left-0 after:right-0 after:h-[1.5px] after:bg-purple after:rounded-md text-gradient">Home</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="text-[12px] font-semibold leading-[22px] tracking-[1.5px] uppercase relative after:w-full text-gray after:absolute after:inset-0  z-5 after:content-['My_profile'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:font-semibold after:mt-[-3px] after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">My
+                        profile</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="text-[12px] font-semibold leading-[22px] tracking-[1.5px] uppercase relative after:w-full text-gray after:absolute after:inset-0  z-5 after:content-['Activity'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:font-semibold after:mt-[-3px] after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">Activity</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="text-[12px] font-semibold leading-[22px] tracking-[1.5px] uppercase relative after:w-full text-gray after:absolute after:inset-0  z-5 after:content-['How_it_works'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:font-semibold after:mt-[-3px] after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">How
+                        it works</a>
+                </li>
+            </ul>
+            <div class="flex flex-row items-center gap-[32px]">
+                <div class="relative group bg-gray rounded-[10px]">
+                    <div
+                        class="absolute inset-0 opacity-0 bg-gradient-to-r from-purple to-blue rounded-[10px] group-hover:opacity-100 transition-all duration-150">
+                    </div>
+                    <button
+                        class="px-[36px] uppercase text-[12px] font-medium leading-[22px] tracking-[1.5px] relative py-[12px] text-gray bg-main rounded-[10px] m-[1px] after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:right-0 after:z-5 after:content-['Create'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:font-semibold after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">
+                        Create
+                    </button>
+                </div>
+                <button
+                    class="py-[12px] w-full h-full relative text-gray uppercase text-[12px] font-medium leading-[22px] tracking-[1.5px] after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:right-0 after:z-5 after:content-['Sign_in'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:font-semibold after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">Sign
+                    in</button>
+            </div>
+        </nav>
+    </header>
+    <main class="min-h-screen">
+        <section class="container flex flex-row justify-between pt-[224px] gap-[140px]">
+            <div class="flex-1">
+                <h1 class="text-[72px] font-semibold leading-[82px] tracking-[-2px] mb-[24px] w-full">
+                    Discover, collect, and
+                    charity in extraordinary NFT marketplace
+                </h1>
+                <p class="w-full text-grayLight text-[24px] font-normal leading-[36px] tracking-[0.5px] mb-[44px]">
+                    In aenean posuere lorem risus nec. Tempor tincidunt aenean purus purus vestibulum nibh mi venenatis
+                </p>
+                <ul class="flex flex-row gap-[40px] items-center">
+                    <li class="relative group rounded-[10px]">
+                        <div class="absolute rounded-[10px] bg-gradient-to-r from-purple to-blue inset-0"></div>
+                        <button
+                            class="px-[36px] uppercase text-[12px] font-medium leading-[22px] tracking-[1.5px] relative py-[12px] bg-transparent rounded-[10px] m-[1px] after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:right-0 after:z-5 after:content-['Explore'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-15 group-hover:bg-main">
+                            Explore
+                        </button>
+                    </li>
+                    <li class="relative group bg-gray rounded-[10px]">
+                        <div
+                            class="absolute inset-0 opacity-0 bg-gradient-to-r from-purple to-blue rounded-[10px] group-hover:opacity-100 transition-all duration-150">
+                        </div>
+                        <button
+                            class="px-[36px] uppercase text-[12px] font-medium leading-[22px] tracking-[1.5px] relative py-[12px] text-gray bg-main rounded-[10px] m-[1px] after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:right-0 after:z-5 after:content-['Create'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">
+                            Create
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-1 max-w-[33%] h-min relative">
+                <div class="bg-cardGradient absolute inset-0 z-3 rounded-[35px]"></div>
+                <div
+                    class="px-[28px] py-[24px] m-[1px] rounded-[35px] relative z-5 before:absolute before:left-[-20px] before:top-[-40px] before:w-[123px] before:h-[123px] before:bg-pink before:blur-[100px] before:z-0 after:absolute after:right-[-16px] after:bottom-[-40px] after:w-[123px] after:h-[123px] after:bg-lightBlue after:blur-[100px] after:z-0">
+                    <img src="./img/card.jpg" alt="Photo" class="rounded-[20px] aspect-square w-full h-auto">
+                    <div class="flex flex-row justify-between items-center mt-[30px]">
+                        <div class="flex flex-row">
+                            <img src="./img/avatar.png" alt="Laura"
+                                class="rounded-[50%] mr-[12px] aspect-square block h-auto object-cover max-w-full">
+                            <div class="flex flex-col justify-between py-2">
+                                <h5 class="font-semibold leading-[24px]">Laura</h5>
+                                <span class="text-grayLight font-medium leading-[24px]">0.21 Weth</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-between py-2">
+                            <span class="font-semibold leading-[24px]">We are here</span>
+                            <span class="text-grayLight font-medium leading-[24px] flex flex-row gap-[8px] justify-end">
+                                <img src="./img/heart.svg" alt="Like" class="w-[24px] h-[24px]">
+                                <span>25</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-[140px] mb-[163px]">
+            <h3 class="title mb-[40px]">Hot auctions</h3>
+            <ul class="grid grid-cols-4 gap-[29px] relative">
+                <li>
+                    <figure class="w-full">
+                        <img src="./img/auction-1.jpg" alt="lorem ipsum"
+                            class="w-full h-auto aspect-square max-w-full block object-cover mb-[24px] rounded-[10px]">
+                        <div class="flex flex-row justify-between">
+                            <figcaption class="font-semibold leading-[24px]">Lorem Ipsum
+                            </figcaption>
+                            <span class="font-medium leading-[24px]">1.20 Weth</span>
+                        </div>
+                        <hr class="w-full h-[1px] text-lastGray mt-[16px] mb-[26px]">
+                        <div class="flex flex-row justify-between items-center leading-[24px]">
+                            <span class="text-caption">
+                                Ends in
+                                <span class="text-primary">01.34.45</span>
+                            </span>
+                            <div class="relative group bg-grayLight rounded-[10px]">
+                                <div
+                                    class="absolute inset-0 opacity-0 bg-gradient-to-r from-purple to-blue rounded-[10px] group-hover:opacity-100 transition-all duration-150">
+                                </div>
+                                <button
+                                    class="px-[23px] py-[2px] text-[12px] font-medium leading-[22px] tracking-[1.5px] relative text-grayLight bg-main rounded-[10px] m-[1px] after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:right-0 after:z-5 after:content-['Bid'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">
+                                    Bid
+                                </button>
+                            </div>
+                        </div>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="w-full">
+                        <img src="./img/auction-2.jpg" alt="lorem ipsum"
+                            class="w-full h-auto aspect-square max-w-full block object-cover mb-[24px] rounded-[10px]">
+                        <div class="flex flex-row justify-between">
+                            <figcaption class="font-semibold leading-[24px]">Lorem Ipsum
+                            </figcaption>
+                            <span class="font-medium leading-[24px]">1.20 Weth</span>
+                        </div>
+                        <hr class="w-full h-[1px] text-lastGray mt-[16px] mb-[26px]">
+                        <div class="flex flex-row justify-between items-center leading-[24px]">
+                            <span class="text-caption">
+                                Ends in
+                                <span class="text-primary">01.34.45</span>
+                            </span>
+                            <div class="relative group bg-grayLight rounded-[10px]">
+                                <div
+                                    class="absolute inset-0 opacity-0 bg-gradient-to-r from-purple to-blue rounded-[10px] group-hover:opacity-100 transition-all duration-150">
+                                </div>
+                                <button
+                                    class="px-[23px] py-[2px] text-[12px] font-medium leading-[22px] tracking-[1.5px] relative text-grayLight bg-main rounded-[10px] m-[1px] after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:right-0 after:z-5 after:content-['Bid'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">
+                                    Bid
+                                </button>
+                            </div>
+                        </div>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="w-full">
+                        <img src="./img/auction-3.jpg" alt="lorem ipsum"
+                            class="w-full h-auto aspect-square max-w-full block object-cover mb-[24px] rounded-[10px]">
+                        <div class="flex flex-row justify-between">
+                            <figcaption class="font-semibold leading-[24px]">Lorem Ipsum
+                            </figcaption>
+                            <span class="font-medium leading-[24px]">1.20 Weth</span>
+                        </div>
+                        <hr class="w-full h-[1px] text-lastGray mt-[16px] mb-[26px]">
+                        <div class="flex flex-row justify-between items-center leading-[24px]">
+                            <span class="text-caption">
+                                Ends in
+                                <span class="text-primary">01.34.45</span>
+                            </span>
+                            <div class="relative group bg-grayLight rounded-[10px]">
+                                <div
+                                    class="absolute inset-0 opacity-0 bg-gradient-to-r from-purple to-blue rounded-[10px] group-hover:opacity-100 transition-all duration-150">
+                                </div>
+                                <button
+                                    class="px-[23px] py-[2px] text-[12px] font-medium leading-[22px] tracking-[1.5px] relative text-grayLight bg-main rounded-[10px] m-[1px] after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:right-0 after:z-5 after:content-['Bid'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">
+                                    Bid
+                                </button>
+                            </div>
+                        </div>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="w-full">
+                        <img src="./img/auction-4.jpg" alt="lorem ipsum"
+                            class="w-full h-auto aspect-square max-w-full block object-cover mb-[24px] rounded-[10px]">
+                        <div class="flex flex-row justify-between">
+                            <figcaption class="font-semibold leading-[24px]">Lorem Ipsum
+                            </figcaption>
+                            <span class="font-medium leading-[24px]">1.20 Weth</span>
+                        </div>
+                        <hr class="w-full h-[1px] text-lastGray mt-[16px] mb-[26px]">
+                        <div class="flex flex-row justify-between items-center leading-[24px]">
+                            <span class="text-caption">
+                                Ends in
+                                <span class="text-primary">01.34.45</span>
+                            </span>
+                            <div class="relative group bg-grayLight rounded-[10px]">
+                                <div
+                                    class="absolute inset-0 opacity-0 bg-gradient-to-r from-purple to-blue rounded-[10px] group-hover:opacity-100 transition-all duration-150">
+                                </div>
+                                <button
+                                    class="px-[23px] py-[2px] text-[12px] font-medium leading-[22px] tracking-[1.5px] relative text-grayLight bg-main rounded-[10px] m-[1px] after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:right-0 after:z-5 after:content-['Bid'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">
+                                    Bid
+                                </button>
+                            </div>
+                        </div>
+                    </figure>
+                </li>
+                <span class="absolute top-[-40px] right-0 text-neutral">
+                    <span
+                        class="peer mr-[12px] cursor-pointer relative bg-main rounded-[10px] m-[1px] after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:right-0 after:z-5 after:content-['View_all'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">
+                        View all
+                    </span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="inline-block mt-[-4px] peer-hover:text-blue transition-colors duration-150">
+                        <g id="arrow-right-24">
+                            <path id="Vector 85 (Stroke)" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.2197 19.0303C13.5126 19.3232 13.9874 19.3232 14.2803 19.0303L20.5303 12.7803C20.8232 12.4874 20.8232 12.0126 20.5303 11.7197L14.2803 5.46967C13.9874 5.17678 13.5126 5.17678 13.2197 5.46967C12.9268 5.76256 12.9268 6.23744 13.2197 6.53033L18.1893 11.5L3.75 11.5C3.33579 11.5 3 11.8358 3 12.25C3 12.6642 3.33579 13 3.75 13L18.1893 13L13.2197 17.9697C12.9268 18.2626 12.9268 18.7374 13.2197 19.0303Z" />
+                        </g>
+                    </svg>
+                </span>
+            </ul>
+        </section>
+        <section class="container mb-[160px]">
+            <h3 class="title text-center mb-[24px]">Getting started</h3>
+            <p class="text-grayLight text-center text-[24px] leading-[36px] tracking-[0.5px] mb-[80px]">Eu, molestie
+                commodo, enim
+                pellentesque turpis integer sagittis</p>
+            <ul class="px-[60px] flex flex-row justify-evenly relative">
+                <div class="absolute w-full h-[53px] top-1/4 left-0 bg-featureGradient blur-[100px] rounded-[10px]">
+                </div>
+                <li>
+                    <figure>
+                        <div
+                            class="feature mx-auto w-[150px] h-[138px] rounded-[26px] flex justify-center items-center mb-[24px]">
+                            <img src="./img/shield.svg" alt="shield">
+                        </div>
+                        <figcaption class="leading-[24px] text-center max-w-[175px]">Connect your wallet</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <div
+                            class="feature mx-auto w-[150px] h-[138px] rounded-[26px] flex justify-center items-center mb-[24px]">
+                            <img src="./img/archive.svg" alt="archive">
+                        </div>
+                        <figcaption class="leading-[24px] text-center max-w-[175px]">Posuere urna, sit amet molestie leo
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <div
+                            class="feature mx-auto w-[150px] h-[138px] rounded-[26px] flex justify-center items-center mb-[24px]">
+                            <img src="./img/picture.svg" alt="picture">
+                        </div>
+                        <figcaption class="leading-[24px] text-center max-w-[175px]">Semper pretium libero sed quam ac
+                            integer ut
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <div
+                            class="feature mx-auto w-[150px] h-[138px] rounded-[26px] flex justify-center items-center mb-[24px]">
+                            <img src="./img/rocket.svg" alt="rocket">
+                        </div>
+                        <figcaption class="leading-[24px] text-center max-w-[175px]">Lectus volutpat magna vitae in arcu
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        <section class="container mb-[160px]">
+            <div class="flex flex-row justify-between items-center mb-[80px]">
+                <h3 class="title">Discover</h3>
+                <ul class="flex flex-row gap-[40px]">
+                    <li class="flex items-center">
+                        <button class="flex flex-row items-center gap-[8px] group">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24"
+                                fill="currentColor"
+                                class="mt-[3px] group-hover:text-purple transition-all duration-150">
+                                <path
+                                    d="M3.73097 4H16.927M3.73097 8H12.8667M3.73097 12H9.82144M13.8818 12L17.9421 8M17.9421 8L22.0024 12M17.9421 8V20"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span
+                                class="text-[24px] font-medium leading-[36px] tracking-[-1px] relative after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:z-5 after:content-['Category'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:font-semibold after:opacity-0 group-hover:after:opacity-100 group-hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">Category</span>
+                        </button>
+                    </li>
+                    <li class="flex items-center">
+                        <button class="flex flex-row items-center gap-[8px] group">
+                            <span
+                                class="text-[24px] font-medium leading-[36px] tracking-[-1px] relative after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:z-5 after:content-['Cheapest'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:font-semibold after:opacity-0 group-hover:after:opacity-100 group-hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">Cheapest</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                fill="none" class="mt-[3px] group-hover:text-blue transition-colors duration-150">
+                                <path d="M19.4811 9L12.3756 16L5.27002 9" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="flex items-center">
+                        <button class="flex flex-row items-center gap-[8px] group">
+                            <span
+                                class="text-[24px] font-medium leading-[36px] tracking-[-1px] relative after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:z-5 after:content-['Newest'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:font-semibold after:opacity-0 group-hover:after:opacity-100 group-hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">Newest</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                fill="none" class="mt-[3px] group-hover:text-blue transition-colors duration-150">
+                                <path d="M19.4811 9L12.3756 16L5.27002 9" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="flex items-center relative group rounded-[10px]">
+                        <div class="absolute rounded-[10px] bg-gradient-to-r from-purple to-blue inset-0"></div>
+                        <button
+                            class="group flex flex-row items-center gap-[8px] text-[24px] font-medium leading-[36px] tracking-[-1px] relative py-[12px] px-[40px] bg-transparent rounded-[10px] m-[1px] transition-all duration-150 after:transition-all after:duration-15 group-hover:bg-main">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                fill="none" class="group-hover:text-purple transition-all duration-150">
+                                <path
+                                    d="M3.16052 4C3.16052 3.44772 3.60824 3 4.16052 3H20.4319C20.9842 3 21.4319 3.44772 21.4319 4V6.5814C21.4319 6.84921 21.3245 7.10583 21.1337 7.29377L14.6246 13.7062C14.4338 13.8942 14.3264 14.1508 14.3264 14.4186V17L10.2661 21V14.4186C10.2661 14.1508 10.1587 13.8942 9.96787 13.7062L3.45873 7.29377C3.26794 7.10583 3.16052 6.84921 3.16052 6.5814V4Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span
+                                class="relative after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:z-5 after:content-['Filter'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:font-bold  after:opacity-0 group-hover:after:opacity-100 group-hover:text-transparent transition-all duration-150 after:transition-all after:duration-150 after:tracking-[-1.5px]">Filter</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <ul class="grid grid-cols-4 grid-rows-2 gap-x-[29px] gap-y-[80px] relative mb-[80px]">
+                <li>
+                    <figure class="w-full">
+                        <img src="./img/discover-1.jpg" alt="lorem ipsum"
+                            class="w-full h-auto aspect-square max-w-full block object-cover mb-[24px] rounded-[10px]">
+                        <div class="flex flex-row justify-between">
+                            <figcaption class="font-semibold leading-[24px]">Lorem Ipsum
+                            </figcaption>
+                            <span class="font-medium leading-[24px]">1.20 Weth</span>
+                        </div>
+                        <hr class="w-full h-[1px] text-lastGray mt-[16px] mb-[26px]">
+                        <div class="flex flex-row justify-between items-center leading-[24px]">
+                            <span class="text-caption">
+                                Ends in
+                                <span class="text-primary">01.34.45</span>
+                            </span>
+                            <div class="relative group bg-grayLight rounded-[10px]">
+                                <div
+                                    class="absolute inset-0 opacity-0 bg-gradient-to-r from-purple to-blue rounded-[10px] group-hover:opacity-100 transition-all duration-150">
+                                </div>
+                                <button
+                                    class="px-[23px] py-[2px] text-[12px] font-medium leading-[22px] tracking-[1.5px] relative text-grayLight bg-main rounded-[10px] m-[1px] after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:right-0 after:z-5 after:content-['Buy'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">
+                                    Buy
+                                </button>
+                            </div>
+                        </div>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="w-full">
+                        <img src="./img/discover-2.jpg" alt="lorem ipsum"
+                            class="w-full h-auto aspect-square max-w-full block object-cover mb-[24px] rounded-[10px]">
+                        <div class="flex flex-row justify-between">
+                            <figcaption class="font-semibold leading-[24px]">Lorem Ipsum
+                            </figcaption>
+                            <span class="font-medium leading-[24px]">1.20 Weth</span>
+                        </div>
+                        <hr class="w-full h-[1px] text-lastGray mt-[16px] mb-[26px]">
+                        <div class="flex flex-row justify-between items-center leading-[24px]">
+                            <span class="text-caption">
+                                Ends in
+                                <span class="text-primary">01.34.45</span>
+                            </span>
+                            <div class="relative group bg-grayLight rounded-[10px]">
+                                <div
+                                    class="absolute inset-0 opacity-0 bg-gradient-to-r from-purple to-blue rounded-[10px] group-hover:opacity-100 transition-all duration-150">
+                                </div>
+                                <button
+                                    class="px-[23px] py-[2px] text-[12px] font-medium leading-[22px] tracking-[1.5px] relative text-grayLight bg-main rounded-[10px] m-[1px] after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:right-0 after:z-5 after:content-['Buy'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">
+                                    Buy
+                                </button>
+                            </div>
+                        </div>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="w-full">
+                        <img src="./img/discover-3.jpg" alt="lorem ipsum"
+                            class="w-full h-auto aspect-square max-w-full block object-cover mb-[24px] rounded-[10px]">
+                        <div class="flex flex-row justify-between">
+                            <figcaption class="font-semibold leading-[24px]">Lorem Ipsum
+                            </figcaption>
+                            <span class="font-medium leading-[24px]">1.20 Weth</span>
+                        </div>
+                        <hr class="w-full h-[1px] text-lastGray mt-[16px] mb-[26px]">
+                        <div class="flex flex-row justify-between items-center leading-[24px]">
+                            <span class="text-caption">
+                                Ends in
+                                <span class="text-primary">01.34.45</span>
+                            </span>
+                            <div class="relative group bg-grayLight rounded-[10px]">
+                                <div
+                                    class="absolute inset-0 opacity-0 bg-gradient-to-r from-purple to-blue rounded-[10px] group-hover:opacity-100 transition-all duration-150">
+                                </div>
+                                <button
+                                    class="px-[23px] py-[2px] text-[12px] font-medium leading-[22px] tracking-[1.5px] relative text-grayLight bg-main rounded-[10px] m-[1px] after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:right-0 after:z-5 after:content-['Buy'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">
+                                    Buy
+                                </button>
+                            </div>
+                        </div>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="w-full">
+                        <img src="./img/discover-4.jpg" alt="lorem ipsum"
+                            class="w-full h-auto aspect-square max-w-full block object-cover mb-[24px] rounded-[10px]">
+                        <div class="flex flex-row justify-between">
+                            <figcaption class="font-semibold leading-[24px]">Lorem Ipsum
+                            </figcaption>
+                            <span class="font-medium leading-[24px]">1.20 Weth</span>
+                        </div>
+                        <hr class="w-full h-[1px] text-lastGray mt-[16px] mb-[26px]">
+                        <div class="flex flex-row justify-between items-center leading-[24px]">
+                            <span class="text-caption">
+                                Ends in
+                                <span class="text-primary">01.34.45</span>
+                            </span>
+                            <div class="relative group bg-grayLight rounded-[10px]">
+                                <div
+                                    class="absolute inset-0 opacity-0 bg-gradient-to-r from-purple to-blue rounded-[10px] group-hover:opacity-100 transition-all duration-150">
+                                </div>
+                                <button
+                                    class="px-[23px] py-[2px] text-[12px] font-medium leading-[22px] tracking-[1.5px] relative text-grayLight bg-main rounded-[10px] m-[1px] after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:right-0 after:z-5 after:content-['Buy'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">
+                                    Buy
+                                </button>
+                            </div>
+                        </div>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="w-full">
+                        <img src="./img/discover-5.jpg" alt="lorem ipsum"
+                            class="w-full h-auto aspect-square max-w-full block object-cover mb-[24px] rounded-[10px]">
+                        <div class="flex flex-row justify-between">
+                            <figcaption class="font-semibold leading-[24px]">Lorem Ipsum
+                            </figcaption>
+                            <span class="font-medium leading-[24px]">1.20 Weth</span>
+                        </div>
+                        <hr class="w-full h-[1px] text-lastGray mt-[16px] mb-[26px]">
+                        <div class="flex flex-row justify-between items-center leading-[24px]">
+                            <span class="text-caption">
+                                Ends in
+                                <span class="text-primary">01.34.45</span>
+                            </span>
+                            <div class="relative group bg-grayLight rounded-[10px]">
+                                <div
+                                    class="absolute inset-0 opacity-0 bg-gradient-to-r from-purple to-blue rounded-[10px] group-hover:opacity-100 transition-all duration-150">
+                                </div>
+                                <button
+                                    class="px-[23px] py-[2px] text-[12px] font-medium leading-[22px] tracking-[1.5px] relative text-grayLight bg-main rounded-[10px] m-[1px] after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:right-0 after:z-5 after:content-['Buy'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">
+                                    Buy
+                                </button>
+                            </div>
+                        </div>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="w-full">
+                        <img src="./img/discover-6.jpg" alt="lorem ipsum"
+                            class="w-full h-auto aspect-square max-w-full block object-cover mb-[24px] rounded-[10px]">
+                        <div class="flex flex-row justify-between">
+                            <figcaption class="font-semibold leading-[24px]">Lorem Ipsum
+                            </figcaption>
+                            <span class="font-medium leading-[24px]">1.20 Weth</span>
+                        </div>
+                        <hr class="w-full h-[1px] text-lastGray mt-[16px] mb-[26px]">
+                        <div class="flex flex-row justify-between items-center leading-[24px]">
+                            <span class="text-caption">
+                                Ends in
+                                <span class="text-primary">01.34.45</span>
+                            </span>
+                            <div class="relative group bg-grayLight rounded-[10px]">
+                                <div
+                                    class="absolute inset-0 opacity-0 bg-gradient-to-r from-purple to-blue rounded-[10px] group-hover:opacity-100 transition-all duration-150">
+                                </div>
+                                <button
+                                    class="px-[23px] py-[2px] text-[12px] font-medium leading-[22px] tracking-[1.5px] relative text-grayLight bg-main rounded-[10px] m-[1px] after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:right-0 after:z-5 after:content-['Buy'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">
+                                    Buy
+                                </button>
+                            </div>
+                        </div>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="w-full">
+                        <img src="./img/discover-7.jpg" alt="lorem ipsum"
+                            class="w-full h-auto aspect-square max-w-full block object-cover mb-[24px] rounded-[10px]">
+                        <div class="flex flex-row justify-between">
+                            <figcaption class="font-semibold leading-[24px]">Lorem Ipsum
+                            </figcaption>
+                            <span class="font-medium leading-[24px]">1.20 Weth</span>
+                        </div>
+                        <hr class="w-full h-[1px] text-lastGray mt-[16px] mb-[26px]">
+                        <div class="flex flex-row justify-between items-center leading-[24px]">
+                            <span class="text-caption">
+                                Ends in
+                                <span class="text-primary">01.34.45</span>
+                            </span>
+                            <div class="relative group bg-grayLight rounded-[10px]">
+                                <div
+                                    class="absolute inset-0 opacity-0 bg-gradient-to-r from-purple to-blue rounded-[10px] group-hover:opacity-100 transition-all duration-150">
+                                </div>
+                                <button
+                                    class="px-[23px] py-[2px] text-[12px] font-medium leading-[22px] tracking-[1.5px] relative text-grayLight bg-main rounded-[10px] m-[1px] after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:right-0 after:z-5 after:content-['Buy'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">
+                                    Buy
+                                </button>
+                            </div>
+                        </div>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="w-full">
+                        <img src="./img/discover-8.jpg" alt="lorem ipsum"
+                            class="w-full h-auto aspect-square max-w-full block object-cover mb-[24px] rounded-[10px]">
+                        <div class="flex flex-row justify-between">
+                            <figcaption class="font-semibold leading-[24px]">Lorem Ipsum
+                            </figcaption>
+                            <span class="font-medium leading-[24px]">1.20 Weth</span>
+                        </div>
+                        <hr class="w-full h-[1px] text-lastGray mt-[16px] mb-[26px]">
+                        <div class="flex flex-row justify-between items-center leading-[24px]">
+                            <span class="text-caption">
+                                Ends in
+                                <span class="text-primary">01.34.45</span>
+                            </span>
+                            <div class="relative group bg-grayLight rounded-[10px]">
+                                <div
+                                    class="absolute inset-0 opacity-0 bg-gradient-to-r from-purple to-blue rounded-[10px] group-hover:opacity-100 transition-all duration-150">
+                                </div>
+                                <button
+                                    class="px-[23px] py-[2px] text-[12px] font-medium leading-[22px] tracking-[1.5px] relative text-grayLight bg-main rounded-[10px] m-[1px] after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:right-0 after:z-5 after:content-['Buy'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">
+                                    Buy
+                                </button>
+                            </div>
+                        </div>
+                    </figure>
+                </li>
+            </ul>
+            <div class="relative group bg-gray rounded-[10px] w-min whitespace-nowrap mx-auto">
+                <div
+                    class="absolute inset-0 opacity-0 bg-gradient-to-r from-purple to-blue rounded-[10px] group-hover:opacity-100 transition-all duration-150">
+                </div>
+                <button
+                    class="px-[36px] uppercase text-[12px] font-medium leading-[22px] tracking-[1.5px] relative py-[12px] text-caption bg-main rounded-[10px] m-[1px] after:absolute after:top-1/2 after:-translate-y-1/2 after:left-0 after:right-0 after:z-5 after:content-['Load_more'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:font-semibold after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">
+                    Load more
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer class="container w-full pb-[100px]">
+        <div class="flex flex-row justify-between gap-[50px]">
+            <p class="text-[40px] font-medium max-w-[455px]">Etiam et id tincidunt faucibus mollis a sociis pretium
+                fermentum quis magna
+                faucibus lacus.</p>
+            <ul class="flex flex-row gap-[40px]">
+                <li>
+                    <h4 class="text-[40px] mb-[40px]">Marketplace</h4>
+                    <ul class="flex flex-col gap-[32px]">
+                        <li><a href="#"
+                                class="text-[24px] text-neutral tracking-[0.72px] relative z-0 after:absolute after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 after:z-5 after:content-['Home'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:font-semibold after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">Home</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-[24px] text-neutral tracking-[0.72px] relative z-0 after:absolute after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 after:z-5 after:content-['Activity'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:font-semibold after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">Activity</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-[24px] text-neutral tracking-[0.72px] relative z-0 after:absolute after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 after:z-5 after:content-['Discover'] after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:font-semibold after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">Discover</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-[24px] text-neutral tracking-[0.72px] relative z-0 after:absolute after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 after:z-5 after:content-['Learn_more'] after:whitespace-nowrap after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:font-semibold after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">Learn
+                                more</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h4 class="text-[40px] mb-[40px]">Company</h4>
+                    <ul class="flex flex-col gap-[32px]">
+                        <li><a href="#"
+                                class="text-[24px] text-neutral tracking-[0.72px] relative z-0 after:absolute after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 after:z-5 after:content-['About_us'] after:whitespace-nowrap after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:font-semibold after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">About
+                                us</a></li>
+                        <li><a href="#"
+                                class="text-[24px] text-neutral tracking-[0.72px] relative z-0 after:absolute after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 after:z-5 after:content-['Services'] after:whitespace-nowrap after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:font-semibold after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">Services</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-[24px] text-neutral tracking-[0.72px] relative z-0 after:absolute after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 after:z-5 after:content-['Portfolio'] after:whitespace-nowrap after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:font-semibold after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">Portfolio</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h4 class="text-[40px] mb-[40px]">Contact</h4>
+                    <ul class="flex flex-col gap-[32px]">
+                        <li><a href="#"
+                                class="text-[24px] text-neutral tracking-[0.72px] relative z-0 after:absolute after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 after:z-5 after:content-['Facebook'] after:whitespace-nowrap after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:font-semibold after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">Facebook</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-[24px] text-neutral tracking-[0.72px] relative z-0 after:absolute after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 after:z-5 after:content-['Instagram'] after:whitespace-nowrap after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:font-semibold after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">Instagram</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-[24px] text-neutral tracking-[0.72px] relative z-0 after:absolute after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 after:z-5 after:content-['Twitter'] after:whitespace-nowrap after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:font-semibold after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">Twitter</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-[24px] text-neutral tracking-[0.72px] relative z-0 after:absolute after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 after:z-5 after:content-['Email'] after:whitespace-nowrap after:text-transparent after:bg-gradient-to-r after:bg-clip-text after:from-purple after:to-blue after:h-auto after:font-semibold after:opacity-0 hover:after:opacity-100 hover:text-transparent transition-all duration-150 after:transition-all after:duration-150">Email</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <hr class="h-[1px] w-full bg-line mt-[40px] mb-[37px]">
+        <div class="flex flex-row justify-between">
+            <ul class="flex flex-row gap-[24px]">
+                <li>
+                    <a href="#"><img src="./img/instagram.png" alt="instagram"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./img/facebook.png" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./img/twitter.png" alt="twitter"></a>
+                </li>
+            </ul>
+            <span class="text-gray text-[24px]">Copyright 2021 Gaslur</span>
+        </div>
+    </footer>
+</body>
+
+</html>
